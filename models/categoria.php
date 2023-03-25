@@ -2,7 +2,7 @@
 
 class Categoria
 {
-    protected $nome;
+    public $nome;
     protected $icona;
 
 
@@ -25,7 +25,7 @@ class Categoria
     //********************************************************************** */
     public function setIcona($icona)
     {
-        if ($icona !== "icona_gatto" || $icona !== "icona_cane") return false; //parametri stringa Cane o gatto icona
+        if ($icona !== "fa-solid fa-cat" || $icona !== "fa-solid fa-dog") return false; //parametri stringa Cane o gatto icona
         $this->icona = $icona;
     }
 

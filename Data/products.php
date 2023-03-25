@@ -6,8 +6,8 @@ require_once __DIR__ . "/../models/food.php";
 require_once __DIR__ . "/../models/bed.php";
 require_once __DIR__ . "/../models/toy.php";
 
-$dog = new Categoria("Cane", "icona_cane"); // variabili per migliore leggibilità
-$cat = new Categoria("Gatto", "icona_gatto"); // variabili per migliore leggibilità
+$dog = new Categoria("Cane", "fa-solid fa-dog"); // variabili per migliore leggibilità
+$cat = new Categoria("Gatto", "fa-solid fa-cat"); // variabili per migliore leggibilità
 
 $products = [
     new Cuccia("Morbidosa", "https://cdn.manomano.com/images/images_products/26388425/P/68008948_1.jpg", 10.10, $dog, "Stoffa", "tondeggiante"),
