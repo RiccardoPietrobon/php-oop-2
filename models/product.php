@@ -1,7 +1,8 @@
 <?php
 
-require_once __DIR__ . "/categoria.php"; //faccio riferimento al file della categoria
 
+require_once __DIR__ . "/categoria.php"; //faccio riferimento al file della categoria
+require_once __DIR__ . "/food.php";
 class Prodotto
 {
     protected $nome;
@@ -15,10 +16,10 @@ class Prodotto
         string $prezzo,
         Categoria $categoria //lego categoria 
     ) {
-        $this->nome = $nome;
-        $this->immagine = $immagine;
-        $this->prezzo = $prezzo;
-        $this->categoria = $categoria;
+        $this->setNome($nome);
+        $this->setImmagine($immagine);
+        $this->setPrezzo($prezzo);
+        $this->setCategoria($categoria);
     }
 
     public function setNome($nome)
